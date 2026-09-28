@@ -1,3 +1,17 @@
+/*
+Problem: Implement linear search to find key k in an array. 
+Count and display the number of comparisons performed. 
+
+Input: - First line: integer n (array size)
+Second line: n space-separated integers 
+Third line: integer k (key to search)
+ 
+Output: - 
+ Line 1: "Found at index i" OR "Not Found"
+ Line 2: "Comparisons = c"
+ 
+
+ */
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -32,7 +46,7 @@ int main() {
     if (foundIndex != -1) {
         cout << "Found at index " << foundIndex << endl;
     } else {
-        cout << "Not Found" << endl;
+        cout << "No matches" << endl;
     }
 
     cout << "Comparisons = " << comparisons << endl;
